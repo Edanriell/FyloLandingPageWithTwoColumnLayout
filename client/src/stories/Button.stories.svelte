@@ -1,9 +1,9 @@
 <script module>
-  import { defineMeta } from '@storybook/addon-svelte-csf';
-  import Button from './Button.svelte';
-  import { fn } from 'storybook/test';
+	import {defineMeta} from '@storybook/addon-svelte-csf';
+	import Button from './Button.svelte';
+	import {fn} from 'storybook/test';
 
-  // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
+	// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
   const { Story } = defineMeta({
     title: 'Example/Button',
     component: Button,
@@ -19,13 +19,13 @@
       onclick: fn(),
     }
   });
-</script>
+</script> 
 
 <!-- More on writing stories with args: https://storybook.js.org/docs/writing-stories/args -->
-<Story name="Primary" args={{ primary: true, label: 'Button' }} />
+<Story args={{ primary: true, label: 'Button' }} name="Primary" />
 
-<Story name="Secondary" args={{ label: 'Button' }} />
+<Story args={{ label: 'Button' }} name="Secondary" />
 
-<Story name="Large" args={{ size: 'large', label: 'Button' }} />
+<Story args={{ size: 'large', label: 'Button' }} name="Large" />
 
-<Story name="Small" args={{ size: 'small', label: 'Button' }} />
+<Story args={{ size: 'small', label: 'Button' }} name="Small" />

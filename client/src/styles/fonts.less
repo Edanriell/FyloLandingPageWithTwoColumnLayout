@@ -1,0 +1,53 @@
+.font-variable(@name, @file, @weight: 100 900, @style: normal) {
+	@font-face {
+		font-family: @name;
+		src: url("/fonts/@{file}.ttf") format("truetype");
+		font-weight: @weight;
+		font-style: @style;
+		font-display: swap;
+	}
+}
+
+.font-regular(@name, @file, @weight: normal, @style: normal) {
+	@font-face {
+		font-family: @name;
+		src: url("/fonts/@{file}.ttf") format("truetype");
+		font-weight: @weight;
+		font-style: @style;
+		font-display: swap;
+	}
+}
+
+
+.font-variable(
+		"OpenSans",
+		"OpenSans-VariableFont_wdth,wght",
+		300 800
+);
+
+.font-variable(
+		"OpenSans",
+		"OpenSans-Italic-VariableFont_wdth,wght",
+		300 800,
+		italic
+);
+
+.font-regular("Poppins", "Poppins-Thin", 100);
+.font-regular("Poppins", "Poppins-ExtraLight", 200);
+.font-regular("Poppins", "Poppins-Light", 300);
+.font-regular("Poppins", "Poppins-Regular", 400);
+.font-regular("Poppins", "Poppins-Medium", 500);
+.font-regular("Poppins", "Poppins-SemiBold", 600);
+.font-regular("Poppins", "Poppins-Bold", 700);
+.font-regular("Poppins", "Poppins-ExtraBold", 800);
+.font-regular("Poppins", "Poppins-Black", 900);
+
+.font-regular("Poppins", "Poppins-ThinItalic", 100, italic);
+.font-regular("Poppins", "Poppins-ExtraLightItalic", 200, italic);
+.font-regular("Poppins", "Poppins-LightItalic", 300, italic);
+.font-regular("Poppins", "Poppins-Italic", 400, italic);
+.font-regular("Poppins", "Poppins-MediumItalic", 500, italic);
+.font-regular("Poppins", "Poppins-SemiBoldItalic", 600, italic);
+.font-regular("Poppins", "Poppins-BoldItalic", 700, italic);
+.font-regular("Poppins", "Poppins-ExtraBoldItalic", 800, italic);
+.font-regular("Poppins", "Poppins-BlackItalic", 900, italic);
