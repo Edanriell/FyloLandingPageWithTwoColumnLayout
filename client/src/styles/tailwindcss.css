@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	--breakpoint-*: initial;
+	--breakpoint-mobile: 375px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-laptop: 1366px;
+	--breakpoint-desktop: 1440px;
+}
