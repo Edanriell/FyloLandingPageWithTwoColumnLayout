@@ -3,12 +3,23 @@
 
 	interface Props {
 		link?: string;
-		children?: Snippet
+		textColor?: string;
+		textHoverColor?: string;
+		classes?: string;
+		children?: Snippet;
+		[key: string]: unknown;
 	}
 
-	let {link = "#", children}: Props = $props();
+	let {
+		link = "#",
+		textColor = "#575989",
+		textHoverColor = "#575989",
+		children,
+		classes = "",
+		...restProps
+	}: Props = $props();
 </script>
 
-<a class="font-[var(--second-family)] font-semibold text-[12rem] text-[hsl(238, 22%, 44%)] desktop:text-[16rem]" href="{link}">
+<a {...restProps} class="font-[var(--second-family)] font-semibold text-[12rem] text-[{textColor}] hover:text-[{textHoverColor}] desktop:text-[16rem] {classes}" href="{link}">
 	{@render children?.()}
 </a>

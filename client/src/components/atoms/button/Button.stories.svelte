@@ -53,7 +53,10 @@
 
 <!-- Custom colors -->
 <Story
-		args={{ bgColor: "#ff4d4f", bgHoverColor: "#ff7a7a" }}
+		args={{
+			bgColor: "#ff4d4f",
+			bgHoverColor: "#ff7a7a"
+		}}
 		name="Custom Red Button"
 >
 	Delete
