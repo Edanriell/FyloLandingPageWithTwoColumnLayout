@@ -2,7 +2,7 @@
 	import "@styles/styles.less"
 	import "@styles/tailwindcss.css"
 
-	import {DefaultLayout} from "@templates/layouts";
+	import {DefaultLayout} from "../components/templates";
 
 	let { children } = $props();
 </script>
