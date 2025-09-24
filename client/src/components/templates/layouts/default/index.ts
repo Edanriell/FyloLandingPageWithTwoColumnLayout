@@ -1,1 +1,1 @@
-export { default as DefaultLayout } from "./default-layout.svelte";
+export { default as DefaultLayout } from "./DefaultLayout.svelte";
