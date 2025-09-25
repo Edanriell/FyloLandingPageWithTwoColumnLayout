@@ -11,7 +11,7 @@
 			layout: "centered",
 		},
 		argTypes: {
-			link: {
+			url: {
 				control: "text",
 				description: "The URL the link should navigate to",
 			},
@@ -29,7 +29,7 @@
 			},
 		},
 		args: {
-			link: "#",
+			url: "#",
 			textColor: "#575989",
 			textHoverColor: "#575989",
 			classes: "",
@@ -41,12 +41,12 @@
 <Story name="Default">Default Link</Story>
 
 <!-- Link with custom URL -->
-<Story args={{ link: "https://example.com" }} name="External Link">
+<Story args={{ url: "https://example.com" }} name="External Link">
 	Visit Example.com
 </Story>
 
 <!-- Internal link -->
-<Story args={{ link: "/about" }} name="Internal Link">
+<Story args={{ url: "/about" }} name="Internal Link">
 	About Us
 </Story>
 
