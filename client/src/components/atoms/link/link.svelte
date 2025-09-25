@@ -2,7 +2,7 @@
 	import type {Snippet} from "svelte";
 
 	interface Props {
-		link?: string;
+		url?: string;
 		textColor?: string;
 		textHoverColor?: string;
 		classes?: string;
@@ -11,7 +11,7 @@
 	}
 
 	let {
-		link = "#",
+		url = "#",
 		textColor = "#575989",
 		textHoverColor = "#575989",
 		children,
@@ -20,6 +20,6 @@
 	}: Props = $props();
 </script>
 
-<a {...restProps} class="font-[var(--second-family)] font-semibold text-[12rem] text-[{textColor}] hover:text-[{textHoverColor}] desktop:text-[16rem] {classes}" href="{link}">
+<a {...restProps} class="font-[var(--second-family)] font-semibold text-[12rem] text-[{textColor}] hover:text-[{textHoverColor}] desktop:text-[16rem] {classes}" href="{url}">
 	{@render children?.()}
 </a>

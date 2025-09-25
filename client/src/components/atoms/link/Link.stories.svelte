@@ -4,49 +4,49 @@
 	import Link from "./Link.svelte";
 
 	const { Story } = defineMeta({
-		title: "Atoms/Link",
-		component: Link,
-		tags: ["autodocs"],
-		parameters: {
-			layout: "centered",
-		},
-		argTypes: {
-			link: {
-				control: "text",
-				description: "The URL the link should navigate to",
-			},
-			textColor: {
-				control: "color",
-				description: "Link text color",
-			},
-			textHoverColor: {
-				control: "color",
-				description: "Link text color on hover",
-			},
-			classes: {
-				control: "text",
-				description: "Additional CSS classes",
-			},
-		},
-		args: {
-			link: "#",
-			textColor: "#575989",
-			textHoverColor: "#575989",
-			classes: "",
-		},
-	});
+									 title: "Atoms/Link",
+									 component: Link,
+									 tags: ["autodocs"],
+									 parameters: {
+										 layout: "centered",
+									 },
+									 argTypes: {
+										 url: {
+											 control: "text",
+											 description: "The URL the link should navigate to",
+										 },
+										 textColor: {
+											 control: "color",
+											 description: "Link text color",
+										 },
+										 textHoverColor: {
+											 control: "color",
+											 description: "Link text color on hover",
+										 },
+										 classes: {
+											 control: "text",
+											 description: "Additional CSS classes",
+										 },
+									 },
+									 args: {
+										 url: "#",
+										 textColor: "#575989",
+										 textHoverColor: "#575989",
+										 classes: "",
+									 },
+								 });
 </script>
 
 <!-- Default link -->
 <Story name="Default">Default Link</Story>
 
 <!-- Link with custom URL -->
-<Story args={{ link: "https://example.com" }} name="External Link">
+<Story args={{ url: "https://example.com" }} name="External Link">
 	Visit Example.com
 </Story>
 
 <!-- Internal link -->
-<Story args={{ link: "/about" }} name="Internal Link">
+<Story args={{ url: "/about" }} name="Internal Link">
 	About Us
 </Story>
 
