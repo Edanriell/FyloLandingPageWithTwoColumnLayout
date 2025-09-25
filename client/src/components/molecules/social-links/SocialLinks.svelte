@@ -19,7 +19,7 @@
 	}
 </script>
 
-<ul {...restProps} class=" {classes}">
+<ul {...restProps} class="flex flex-row items-center gap-x-[10rem] {classes}">
 	{#each getChildren() as child, socialLinkIndex (socialLinkIndex)}
 		<li>{child}</li>
 	{/each}
