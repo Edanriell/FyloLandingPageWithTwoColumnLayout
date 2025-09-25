@@ -6,22 +6,22 @@
 	import PrimaryNavigation from "./PrimaryNavigation.svelte";
 
 	const { Story } = defineMeta({
-									 title: "Molecules/PrimaryNavigation",
-									 component: PrimaryNavigation,
-									 tags: ["autodocs"],
-									 parameters: {
-										 layout: "centered",
-									 },
-									 argTypes: {
-										 classes: {
-											 control: "text",
-											 description: "Additional CSS classes",
-										 },
-									 },
-									 args: {
-										 classes: ""
-									 },
-								 });
+		 title: "Molecules/PrimaryNavigation",
+		 component: PrimaryNavigation,
+		 tags: ["autodocs"],
+		 parameters: {
+			 layout: "centered",
+		 },
+		 argTypes: {
+			 classes: {
+				 control: "text",
+				 description: "Additional CSS classes",
+			 },
+		 },
+		 args: {
+			 classes: ""
+		 },
+	 });
 </script>
 
 <!-- Primary navigation -->

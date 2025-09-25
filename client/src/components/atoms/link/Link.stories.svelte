@@ -4,37 +4,37 @@
 	import Link from "./Link.svelte";
 
 	const { Story } = defineMeta({
-									 title: "Atoms/Link",
-									 component: Link,
-									 tags: ["autodocs"],
-									 parameters: {
-										 layout: "centered",
-									 },
-									 argTypes: {
-										 url: {
-											 control: "text",
-											 description: "The URL the link should navigate to",
-										 },
-										 textColor: {
-											 control: "color",
-											 description: "Link text color",
-										 },
-										 textHoverColor: {
-											 control: "color",
-											 description: "Link text color on hover",
-										 },
-										 classes: {
-											 control: "text",
-											 description: "Additional CSS classes",
-										 },
-									 },
-									 args: {
-										 url: "#",
-										 textColor: "#575989",
-										 textHoverColor: "#575989",
-										 classes: "",
-									 },
-								 });
+		 title: "Atoms/Link",
+		 component: Link,
+		 tags: ["autodocs"],
+		 parameters: {
+			 layout: "centered",
+		 },
+		 argTypes: {
+			 url: {
+				 control: "text",
+				 description: "The URL the link should navigate to",
+			 },
+			 textColor: {
+				 control: "color",
+				 description: "Link text color",
+			 },
+			 textHoverColor: {
+				 control: "color",
+				 description: "Link text color on hover",
+			 },
+			 classes: {
+				 control: "text",
+				 description: "Additional CSS classes",
+			 },
+		 },
+		 args: {
+			 url: "#",
+			 textColor: "#575989",
+			 textHoverColor: "#575989",
+			 classes: "",
+		 },
+	 });
 </script>
 
 <!-- Default link -->
