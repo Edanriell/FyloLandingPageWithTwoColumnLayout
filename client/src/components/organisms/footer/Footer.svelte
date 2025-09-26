@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {Link, Logotype, SocialLink} from "../../atoms";
-	import {SecondaryNavigation, SocialLinks} from "../../molecules";
+	import {Contact, Link, Logotype, SocialLink} from "../../atoms";
+	import {Contacts, SecondaryNavigation, SocialLinks} from "../../molecules";
 
 	interface Props {
 		classes?: string;
@@ -13,9 +13,13 @@
 	}: Props = $props();
 </script>
 
-<footer {...restProps} class=" {classes}">
-	<div>
+<footer {...restProps} class="pt-[45rem] pb-[40rem] pl-[40rem] pr-[40rem] bg-[#070439] flex flex-col items-start gap-y-[50rem] desktop:pl-[80rem] desktop:pr-[80rem] desktop:pt-[60rem] desktop:pb-[70rem] desktop:flex-row desktop:items-between {classes}">
+	<div class="flex flex-col items-start gap-y-[30rem]">
 		<Logotype colorScheme="Light" />
+		<Contacts>
+			<Contact description="Phone: +1-543-123-4567" type="phone-number" url="tel:15431234567" />
+			<Contact description="example@fylo.com" type="email-address" url="mailto:example@fylo.com" />
+		</Contacts>
 	</div>
 	<SecondaryNavigation groupBy={4}>
 		<Link textColor="#FFF" textHoverColor="#155EED" url="#">About Us</Link>,
