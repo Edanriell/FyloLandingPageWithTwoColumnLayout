@@ -3,7 +3,7 @@
 	import {PrimaryNavigation} from "../../molecules";
 </script>
 
-<header class="relative">
+<header class="flex flex-row items-center justify-between pl-[30rem] pr-[30rem] mt-[30rem] mb-[30rem] desktop:pr-[90rem] desktop:pl-[90rem] desktop:mt-[90rem] desktop:mb-[90rem]">
 	<Logotype colorScheme="Dark" />
 	<PrimaryNavigation name="Primary navigation" >
 		<Link url="#">Features</Link>,
