@@ -12,15 +12,8 @@
 		classes = "",
 		...restProps
 	}: Props = $props();
-
-	function getChildren() {
-		const child = children?.();
-		return Array.isArray(child) ? child : [child];
-	}
 </script>
 
 <ul {...restProps} class="flex flex-row items-center gap-x-[10rem] {classes}">
-	{#each getChildren() as child, socialLinkIndex (socialLinkIndex)}
-		<li>{child}</li>
-	{/each}
+	{@render children?.()}
 </ul>

@@ -4,6 +4,7 @@
 	import {Link} from "../../atoms/link";
 
 	import PrimaryNavigation from "./PrimaryNavigation.svelte";
+	import PrimaryNavigationItem from "./PrimaryNavigationItem.svelte";
 
 	const { Story } = defineMeta({
 		 title: "Molecules/PrimaryNavigation",
@@ -26,7 +27,13 @@
 
 <!-- Primary navigation -->
 <Story name="Primary navigation" >
-	<Link url="#">Features</Link>,
-	<Link url="#">Team</Link>,
-	<Link url="#">Sign In</Link>
+	<PrimaryNavigationItem>
+		<Link url="#">Features</Link>
+	</PrimaryNavigationItem>
+	<PrimaryNavigationItem>
+		<Link url="#">Team</Link>
+	</PrimaryNavigationItem>
+	<PrimaryNavigationItem>
+		<Link url="#">Sign In</Link>
+	</PrimaryNavigationItem>
 </Story>

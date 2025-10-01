@@ -4,6 +4,8 @@
 	import {Link} from "../../atoms/link";
 
 	import SecondaryNavigation from "./SecondaryNavigation.svelte";
+	import SecondaryNavigationGroup from "./SecondaryNavigationGroup.svelte";
+	import SecondaryNavigationItem from "./SecondaryNavigationItem.svelte";
 
 	const { Story } = defineMeta({
 		title: "Molecules/SecondaryNavigation",
@@ -31,11 +33,29 @@
 
 <!-- Secondary navigation -->
 <Story name="Secondary navigation" >
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">About Us</Link>,
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Jobs</Link>,
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Press</Link>
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Blog</Link>
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Contact Us</Link>
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Terms</Link>
-	<Link textColor="#FFF" textHoverColor="#155EED" url="#">Privacy</Link>
+	<SecondaryNavigationGroup>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">About Us</Link>
+		</SecondaryNavigationItem>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Jobs</Link>
+		</SecondaryNavigationItem>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Press</Link>
+		</SecondaryNavigationItem>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Blog</Link>
+		</SecondaryNavigationItem>
+	</SecondaryNavigationGroup>
+	<SecondaryNavigationGroup>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Contact Us</Link>
+		</SecondaryNavigationItem>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Terms</Link>
+		</SecondaryNavigationItem>
+		<SecondaryNavigationItem>
+			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Privacy</Link>
+		</SecondaryNavigationItem>
+	</SecondaryNavigationGroup>
 </Story>
