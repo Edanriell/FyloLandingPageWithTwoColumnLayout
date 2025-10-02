@@ -18,13 +18,13 @@
 	<Logotype colorScheme="Dark" />
 	<PrimaryNavigation>
 		<PrimaryNavigationItem>
-			<Link url="#">Features</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Features</Link>
 		</PrimaryNavigationItem>
 		<PrimaryNavigationItem>
-			<Link url="#">Team</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Team</Link>
 		</PrimaryNavigationItem>
 		<PrimaryNavigationItem>
-			<Link url="#">Sign In</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Sign In</Link>
 		</PrimaryNavigationItem>
 	</PrimaryNavigation>
 </header>
