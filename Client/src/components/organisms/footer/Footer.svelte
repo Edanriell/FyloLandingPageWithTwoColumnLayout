@@ -20,7 +20,7 @@
 	}: Props = $props();
 </script>
 
-<footer {...restProps} class="pt-[45rem] pb-[40rem] pl-[40rem] pr-[40rem] bg-[#070439] flex flex-col items-start gap-y-[50rem] desktop:pl-[80rem] desktop:pr-[80rem] desktop:pt-[60rem] desktop:pb-[70rem] desktop:flex-row desktop:items-between {classes}">
+<footer {...restProps} class="pt-[45rem] pb-[40rem] pl-[40rem] pr-[40rem] bg-[#070439] flex flex-col items-start gap-y-[50rem] desktop:pl-[80rem] desktop:pr-[80rem] desktop:pt-[60rem] desktop:pb-[70rem] desktop:flex-row desktop:items-between desktop:justify-between {classes}">
 	<div class="flex flex-col items-start gap-y-[50rem]">
 		<Logotype colorScheme="Light" />
 		<Contacts>
@@ -28,7 +28,7 @@
 			<Contact description="example@fylo.com" type="email-address" url="mailto:example@fylo.com" />
 		</Contacts>
 	</div>
-	<SecondaryNavigation>
+	<SecondaryNavigation classes="desktop:pt-[100rem] desktop:justify-between desktop:basis-[32.5%]">
 		<SecondaryNavigationGroup>
 			<SecondaryNavigationItem>
 				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">About Us</Link>
@@ -55,7 +55,7 @@
 			</SecondaryNavigationItem>
 		</SecondaryNavigationGroup>
 	</SecondaryNavigation>
-	<SocialLinks>
+	<SocialLinks classes="desktop:pt-[100rem]">
 		<SocialLinkItem>
 			<SocialLink description="Link to Facebook profile" url="#">
 				<svg class="w-[16rem] h-[30rem] object-contain" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">

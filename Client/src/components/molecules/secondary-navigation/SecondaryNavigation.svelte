@@ -15,6 +15,6 @@
 	}: Props = $props();
 </script>
 
-<nav {...restProps} class="relative flex flex-col gap-y-[50rem] {classes}">
+<nav {...restProps} class="relative flex flex-col gap-y-[50rem] desktop:flex-row {classes}">
 	{@render children()}
 </nav>
