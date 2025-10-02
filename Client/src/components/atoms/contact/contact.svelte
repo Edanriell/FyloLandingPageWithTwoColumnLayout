@@ -30,7 +30,7 @@
 			</svg>
 		{/if}
 	</dt>
-	<dd class="font-[var(--font-family)] font-normal text-[14rem] text-white desktop:text-[16rem]">
+	<dd class="font-[var(--font-family)] font-normal text-white text-[16rem]">
 		<a class="not-italic" href="{url}">{description}</a>
 	</dd>
 </div>

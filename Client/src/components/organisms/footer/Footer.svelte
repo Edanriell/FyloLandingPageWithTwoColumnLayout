@@ -21,7 +21,7 @@
 </script>
 
 <footer {...restProps} class="pt-[45rem] pb-[40rem] pl-[40rem] pr-[40rem] bg-[#070439] flex flex-col items-start gap-y-[50rem] desktop:pl-[80rem] desktop:pr-[80rem] desktop:pt-[60rem] desktop:pb-[70rem] desktop:flex-row desktop:items-between {classes}">
-	<div class="flex flex-col items-start gap-y-[30rem]">
+	<div class="flex flex-col items-start gap-y-[50rem]">
 		<Logotype colorScheme="Light" />
 		<Contacts>
 			<Contact description="Phone: +1-543-123-4567" type="phone-number" url="tel:15431234567" />
@@ -31,27 +31,27 @@
 	<SecondaryNavigation>
 		<SecondaryNavigationGroup>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">About Us</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">About Us</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Jobs</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Jobs</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Press</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Press</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Blog</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Blog</Link>
 			</SecondaryNavigationItem>
 		</SecondaryNavigationGroup>
 		<SecondaryNavigationGroup>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Contact Us</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Contact Us</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Terms</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Terms</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="text-[#fff] hover:text-[#6f9bfa]" url="#">Privacy</Link>
+				<Link classes="text-[#fff] hover:text-[#6f9bfa] text-[16rem] font-normal!" url="#">Privacy</Link>
 			</SecondaryNavigationItem>
 		</SecondaryNavigationGroup>
 	</SecondaryNavigation>
