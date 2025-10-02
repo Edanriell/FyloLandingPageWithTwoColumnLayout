@@ -14,17 +14,17 @@
 	}: Props = $props();
 </script>
  
-<header {...restProps} class="flex flex-row items-center justify-between pl-[30rem] pr-[30rem] mt-[30rem] mb-[30rem] desktop:pr-[90rem] desktop:pl-[90rem] desktop:mt-[90rem] desktop:mb-[90rem] {classes}">
+<header {...restProps} class="flex flex-row items-center justify-between pl-[30rem] pr-[30rem] mt-[30rem]! mb-[30rem]! desktop:pr-[90rem] desktop:pl-[90rem] desktop:mt-[90rem]! desktop:mb-[90rem]! {classes}">
 	<Logotype colorScheme="Dark" />
 	<PrimaryNavigation>
 		<PrimaryNavigationItem>
-			<Link url="#">Features</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Features</Link>
 		</PrimaryNavigationItem>
 		<PrimaryNavigationItem>
-			<Link url="#">Team</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Team</Link>
 		</PrimaryNavigationItem>
 		<PrimaryNavigationItem>
-			<Link url="#">Sign In</Link>
+			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Sign In</Link>
 		</PrimaryNavigationItem>
 	</PrimaryNavigation>
 </header>

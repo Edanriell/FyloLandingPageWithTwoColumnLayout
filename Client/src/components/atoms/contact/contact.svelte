@@ -16,7 +16,7 @@
 	}: Props = $props();
 </script>
 
-<div {...restProps} class="flex flex-row items-center gap-y-[15rem] {classes}">
+<div {...restProps} class="flex flex-row items-center gap-x-[15rem] {classes}">
 	<dt class="flex-shrink-0 flex-grow-0 text-white">
 		{#if type === "phone-number"}
 			<span class="visually-hidden">Phone number</span>
@@ -30,7 +30,7 @@
 			</svg>
 		{/if}
 	</dt>
-	<dd class="font-[var(--font-family)] font-normal text-[14rem] text-white desktop:text-[16rem]">
+	<dd class="font-[var(--font-family)] font-normal text-white text-[16rem]">
 		<a class="not-italic" href="{url}">{description}</a>
 	</dd>
 </div>
