@@ -9,7 +9,7 @@
 
 {#if colorScheme === "Dark"}
 	<a href="/" class="relative" {...restProps}>
-		<svg class="w-[80rem] h-[24rem] desktop:w-[150rem] desktop:h-[45rem] object-contain" width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg class="w-[80rem] h-[24rem] desktop:w-[150rem] desktop:h-[45rem] object-contain" viewBox="0 0 166 49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs>
 			<g fill="none" fill-rule="evenodd">
 				<path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#BDBAFA"/>
@@ -19,7 +19,7 @@
 	</a>
 {:else}
 	<a href="/" class="relative" {...restProps}>
-		<svg class="w-[166rem] h-[49rem] object-contain" width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg class="w-[166rem] h-[49rem] object-contain" viewBox="0 0 166 49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs>
 			<g fill="none" fill-rule="evenodd">
 				<path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#FFF"/>
