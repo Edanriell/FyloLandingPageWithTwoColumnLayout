@@ -1,10 +1,11 @@
 <script lang="ts">
 	import {HeroIllustration} from "@atoms/hero-illustration";
+	import {PrimaryHeading} from "@atoms/primary-heading";
 </script>
 
 <section>
-	<div>
-		<h1>All your files in one secure location, accessible anywhere.</h1>
+	<div> 
+		<PrimaryHeading>All your files in one secure location, accessible anywhere.</PrimaryHeading>
 		<p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
 		<form action="">
 			<div>
