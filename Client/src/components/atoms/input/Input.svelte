@@ -25,8 +25,6 @@
 		placeholder?: string;
 		name?: string;
 		id?: string;
-		borderColor?: string;
-		borderWidth?: number;
 		classes?: string;
 		[key: string]: unknown;
 	}
@@ -36,8 +34,6 @@
 		placeholder = "",
 		name = "",
 		id = "",
-		borderColor = "",
-		borderWidth,
 		classes = "",
 		...restProps
 	}: Props = $props();
@@ -47,7 +43,7 @@
 	<label class="visually-hidden" for="{id}">{name}</label>
 	<input
 			{...restProps}
-			class="font-[var(--font-family)] font-normal text-[#070439] text-[13rem]! rounded-[3rem] border-[{borderWidth}rem] border-[{borderColor}] w-full p-[10rem] placeholder:text-[#07043966] {classes}"
+			class="font-[OpenSans] pt-[14rem] pb-[14rem] pl-[21rem] pr-[21rem] font-normal text-[#07043b] text-[12rem]! rounded-[3rem] w-full placeholder:text-[#c2c2c2] tracking-[0.03em] desktop:text-[14rem]! {classes}"
 			id="{id}"
 			name="{name}"
 			placeholder="{placeholder}"

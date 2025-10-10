@@ -1,17 +1,26 @@
 <script lang="ts">
-	import {HeroIllustration} from "@atoms/hero-illustration";
-	import {PrimaryHeading} from "@atoms/primary-heading";
-	import {Text} from "@atoms/text";
+	import {HeroIllustration, PrimaryHeading, Text} from "@atoms";
 	import {EmailSignup} from "@molecules";
 </script>
 
-<section class="flex flex-col-reverse items-center pt-[50rem] pb-[150rem] ml-[20rem]! mr-[20rem]! desktop:flex-row desktop:pt-[unset] desktop:mr-[50rem]! desktop:ml-[50rem]! desktop:gap-[50rem]">
-	<div class="relative desktop:basis-[50%] desktop:pl-[40rem]!">
-		<PrimaryHeading classes="mb-[38rem]! desktop:text-left desktop:pr-[20rem]! desktop:text-wrap!">All your files in one secure location, accessible anywhere.</PrimaryHeading>
-		<Text classes="mb-[40rem]! desktop:text-left desktop:mb-[20rem]! desktop:pr-[10rem]!">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</Text>
-		<EmailSignup classes="grid grid-rows-[43rem] grid-cols-1 gap-y-[10rem] desktop:grid-cols-[1fr_220rem] desktop:gap-x-[20rem] desktop:mr-[50rem]!" inputClasses="border-[2rem] border-[rgba(128,128,128,0.651)]" />
+<section class="hero flex flex-col-reverse items-center desktop:flex-row">
+	<div class="relative desktop:basis-[50%]">
+		<PrimaryHeading classes="mb-[24rem]! desktop:text-left desktop:text-wrap! desktop:mb-[15rem]!">All your files in one secure location, accessible anywhere.</PrimaryHeading>
+		<Text classes="mb-[32rem]! desktop:text-left desktop:mb-[25rem]!">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</Text>
+		<EmailSignup classes="grid grid-rows-[40rem_40rem] grid-cols-1 gap-y-[16rem] desktop:grid-rows-[45rem] desktop:grid-cols-[0.77fr_200rem] desktop:gap-x-[16rem]" inputClasses="border-[0.62rem] border-[#07043b] shadow-[2rem_3rem_6rem_0_rgba(0,0,0,0.16)]" />
 	</div>
 	<div class="desktop:basis-[50%]">
-		<HeroIllustration classes="mb-[18rem]!" />
+		<HeroIllustration classes="mb-[40rem]!" />
 	</div>
 </section>
+
+<style lang="less">
+	@import "../../../styles/fluid-space.less";
+
+	.hero {
+		.fluid-space-clamp(padding-top, 74rem, 21rem);
+		.fluid-space-clamp(padding-bottom, 90rem, 164rem);
+		.fluid-space-clamp(margin-left, 28rem, 80rem);
+		.fluid-space-clamp(margin-right, 27rem, 80rem);
+	}
+</style>

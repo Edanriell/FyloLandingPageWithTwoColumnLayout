@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
-	import {Link} from "../../atoms/link";
+	import {Link} from "@atoms/link";
 
 	import SecondaryNavigation from "./SecondaryNavigation.svelte";
 	import SecondaryNavigationGroup from "./SecondaryNavigationGroup.svelte";

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
-	import {SocialLink} from "../../atoms";
+	import {SocialLink} from "@atoms";
 
 	import SocialLinks from "./SocialLinks.svelte";
 	import SocialLinkItem from "./SocialLinkItem.svelte";
@@ -25,7 +25,6 @@
 	});
 </script>
 
-<!-- Social links -->
 <Story name="Social links" >
 	<SocialLinkItem>
 		<SocialLink description="Link to Facebook profile" url="#">

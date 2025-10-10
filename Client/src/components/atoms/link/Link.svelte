@@ -16,6 +16,14 @@
 	}: Props = $props();
 </script>
 
-<a {...restProps} class="font-[var(--second-family)] font-semibold text-[12rem] desktop:text-[16rem] {classes}" href="{url}">
+<a {...restProps} class="font-[Raleway] font-normal link {classes}" href="{url}">
 	{@render children?.()}
 </a>
+
+<style lang="less">
+	@import "../../../styles/fluid-typography.less";
+
+	.link {
+		.fluid-text-clamp(12rem, 16rem);
+	}
+</style>

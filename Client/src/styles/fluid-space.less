@@ -1,0 +1,56 @@
+// Fluid Spacing - Responsive spacing that scales smoothly
+.fluid-space(@type, @min-space, @max-space, @min-screen: 375px, @max-screen: 1440px)
+when
+	(@type = margin-left),
+	(@type = margin-right),
+	(@type = margin-top),
+	(@type = margin-bottom),
+	(@type = margin),
+	(@type = padding-left),
+	(@type = padding-right),
+	(@type = padding-top),
+	(@type = padding-bottom),
+	(@type = padding),
+	(@type = gap),
+	(@type = column-gap),
+	(@type = row-gap)
+{
+	@{type}: @min-space;
+
+	@media screen and (min-width: @min-screen) {
+		@{type}: ~"calc(@{min-space} + (@{max-space} - @{min-space}) * ((100vw - @{min-screen}) / (@{max-screen} - @{min-screen})))";
+	}
+
+	@media screen and (min-width: @max-screen) {
+		@{type}: @max-space;
+	}
+}
+
+// Clamp-based fluid spacing (modern approach)
+.fluid-space-clamp(@type, @min-space, @max-space, @min-screen: 375px, @max-screen: 1440px) when
+(@type = margin-left),
+(@type = margin-right),
+(@type = margin-top),
+(@type = margin-bottom),
+(@type = margin),
+(@type = padding-left),
+(@type = padding-right),
+(@type = padding-top),
+(@type = padding-bottom),
+(@type = padding),
+(@type = gap),
+(@type = column-gap),
+(@type = row-gap) {
+	// Default clamp (Chrome, Safari)
+	@{type}: ~"clamp(@{min-space}, calc(@{min-space} + (@{max-space} - @{min-space}) * ((100vw - @{min-screen}) / (@{max-screen} - @{min-screen}))), @{max-space})";
+
+	// Compute value
+	@slope: (@max-screen / @max-space) * 100;
+	// Strip any leftover units
+	@slope-num: unit(@slope);
+	// Firefox fallback: only vw value
+	@-moz-document url-prefix() {
+		@{type}: ~"clamp(@{min-space}, @{slope-num}vw, @{max-space})";
+	}
+}
+

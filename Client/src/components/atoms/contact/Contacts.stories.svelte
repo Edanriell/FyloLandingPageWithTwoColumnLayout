@@ -35,8 +35,6 @@
 	});
 </script>
 
-<!-- Email address -->
 <Story args={{ type: "email-address", url:"mailto:example@fylo.com", description:"example@fylo.com" }} name="Email Address" />
 
-<!-- Phone number -->
 <Story args={{ type: "phone-number", url:"tel:15431234567", description:"Phone: +1-543-123-4567" }} name="Phone Number" />

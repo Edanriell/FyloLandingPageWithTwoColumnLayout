@@ -1,7 +1,6 @@
 <script lang="ts">
-	import {Logotype} from "../../atoms/logotype"
-	import {Link} from "../../atoms/link";
-	import {PrimaryNavigation, PrimaryNavigationItem} from "../../molecules";
+	import {Link, Logotype} from "@atoms"
+	import {PrimaryNavigation, PrimaryNavigationItem} from "@molecules";
 
 	interface Props {
 		classes?: string;
@@ -13,8 +12,8 @@
 		...restProps
 	}: Props = $props();
 </script>
- 
-<header {...restProps} class="flex flex-row items-center justify-between pl-[30rem] pr-[30rem] mt-[30rem]! mb-[30rem]! desktop:pr-[90rem] desktop:pl-[90rem] desktop:mt-[90rem]! desktop:mb-[90rem]! {classes}">
+
+<header {...restProps} class="header flex flex-row items-center justify-between {classes}">
 	<Logotype colorScheme="Dark" />
 	<PrimaryNavigation>
 		<PrimaryNavigationItem>
@@ -28,3 +27,14 @@
 		</PrimaryNavigationItem>
 	</PrimaryNavigation>
 </header>
+
+<style lang="less">
+	@import "../../../styles/fluid-space.less";
+
+	.header {
+		.fluid-space-clamp(padding-top, 24rem, 65rem);
+		.fluid-space-clamp(padding-bottom, 24rem, 65rem);
+		.fluid-space-clamp(margin-left, 24rem, 80rem);
+		.fluid-space-clamp(margin-right, 24rem, 80rem);
+	}
+</style>

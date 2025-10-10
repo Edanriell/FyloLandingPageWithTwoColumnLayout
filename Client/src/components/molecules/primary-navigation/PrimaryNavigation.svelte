@@ -15,7 +15,15 @@
 </script>
 
 <nav {...restProps} class="relative {classes}">
-	<ul class="flex flex-row items-center gap-x-[16rem] desktop:gap-x-[50rem] flex-wrap">
+	<ul class="primary-navigation flex flex-row items-center flex-wrap">
 		{@render children()}
 	</ul>
 </nav>
+
+<style lang="less">
+	@import "../../../styles/fluid-space.less";
+
+	.primary-navigation {
+		.fluid-space-clamp(column-gap, 24rem, 57rem);
+	}
+</style>

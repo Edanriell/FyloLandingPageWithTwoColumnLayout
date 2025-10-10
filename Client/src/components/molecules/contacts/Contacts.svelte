@@ -15,7 +15,7 @@
 </script>
 
 <address {...restProps} class="{classes}">
-	<dl class="flex flex-col gap-y-[16rem]">
+	<dl class="flex flex-col gap-y-[16rem] desktop:gap-y-[15rem]">
 		{@render children?.()}
 	</dl>
 </address>
