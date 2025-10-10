@@ -22,8 +22,6 @@
 	});
 </script>
 
-<!-- Light logotype -->
 <Story args={{ colorScheme: "Light" }} name="Light logotype" />
 
-<!-- Dark logotype -->
 <Story args={{ colorScheme: "Dark" }} name="Dark logotype" />

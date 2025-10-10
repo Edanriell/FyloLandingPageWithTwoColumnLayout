@@ -22,5 +22,4 @@
 	});
 </script>
 
-<!-- Header -->
 <Story name="Header" />

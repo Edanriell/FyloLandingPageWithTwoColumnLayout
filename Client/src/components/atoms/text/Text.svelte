@@ -14,6 +14,6 @@
 	}: Props = $props();
 </script>
 
-<p {...restProps} class="font-[var(--font-family)] font-medium text-[#0b0733] text-center text-[15rem] desktop:text-[18rem] {classes}">
+<p {...restProps} class="font-[OpenSans] font-normal text-[#07043b] text-center text-[14rem] leading-[150%] desktop:text-[17rem] desktop:leading-[141%] desktop:tracking-[0.03em] pl-[unset] pr-[30rem] {classes}">
 	{@render children?.()}
 </p> 

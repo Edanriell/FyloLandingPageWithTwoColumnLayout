@@ -12,7 +12,7 @@
 
 <svg
 		{...restProps}
-		class="w-[390rem] h-[320rem] tablet:w-[740rem] tablet:h-[580rem] desktop:w-[100%] {classes}"
+		class="w-[81.06vw] h-[60vw] max-w-[640rem] max-h-[474rem] desktop:w-[100%] desktop:h-[474rem] {classes}"
 		data-name="Layer 1"
 		viewBox="0 0 1132 839"
 		xmlns="http://www.w3.org/2000/svg"

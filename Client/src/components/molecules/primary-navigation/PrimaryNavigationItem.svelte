@@ -14,6 +14,6 @@
 	}: Props = $props();
 </script>
 
-<li {...restProps} class=" {classes}">
+<li {...restProps} class="{classes}">
 	{@render children()}
 </li>

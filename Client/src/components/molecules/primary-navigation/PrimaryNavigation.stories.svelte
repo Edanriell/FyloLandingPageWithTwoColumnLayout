@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
-	import {Link} from "../../atoms/link";
+	import {Link} from "@atoms";
 
 	import PrimaryNavigation from "./PrimaryNavigation.svelte";
 	import PrimaryNavigationItem from "./PrimaryNavigationItem.svelte";
@@ -25,7 +25,6 @@
 	 });
 </script>
 
-<!-- Primary navigation -->
 <Story name="Primary navigation" >
 	<PrimaryNavigationItem>
 		<Link url="#">Features</Link>

@@ -14,6 +14,6 @@
 	}: Props = $props();
 </script>
 
-<ul {...restProps} class="flex flex-col items-start gap-y-[20rem] flex-wrap desktop:gap-x-[50rem] {classes}">
+<ul {...restProps} class="flex flex-col items-start gap-y-[16rem] flex-wrap desktop:gap-x-[50rem] {classes}">
 	{@render children()}
 </ul>
