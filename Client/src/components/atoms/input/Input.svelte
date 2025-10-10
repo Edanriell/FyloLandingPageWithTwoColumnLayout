@@ -43,14 +43,11 @@
 	}: Props = $props();
 </script>
 
-// Border width 2rem
-// Border color rgba(128,128,128,0.651)
-
 {#if type === "text" || type === "search" || type === "email" || type === "password" || type === "tel" || type === "url"}
 	<label class="visually-hidden" for="{id}">{name}</label>
 	<input
 			{...restProps}
-			class="font-[var(--font-family)] font-normal text-[#070439] text-[12rem] rounded-[3rem] border-[{borderWidth}rem] border-[{borderColor}] w-full p-[10rem] placeholder:text-[#07043966] desktop:text-[14rem] {classes}"
+			class="font-[var(--font-family)] font-normal text-[#070439] text-[13rem]! rounded-[3rem] border-[{borderWidth}rem] border-[{borderColor}] w-full p-[10rem] placeholder:text-[#07043966] {classes}"
 			id="{id}"
 			name="{name}"
 			placeholder="{placeholder}"
