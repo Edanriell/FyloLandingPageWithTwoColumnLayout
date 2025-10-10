@@ -5,3 +5,5 @@ export * from "./logotype";
 export * from "./social-link";
 export * from "./contact";
 export * from "./hero-illustration";
+export * from "./primary-heading";
+export * from "./text";

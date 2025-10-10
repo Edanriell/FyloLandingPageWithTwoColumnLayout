@@ -12,10 +12,9 @@
 
 <svg
 		{...restProps}
-		class="w-[390rem] h-[320rem] tablet:w-[740rem] tablet:h-[580rem] desktop:w-[1132rem] desktop:h-[839rem] {classes}"
+		class="w-[390rem] h-[320rem] tablet:w-[740rem] tablet:h-[580rem] desktop:w-[100%] {classes}"
 		data-name="Layer 1"
-		height="839.14"
-		width="1132.93"
+		viewBox="0 0 1132 839"
 		xmlns="http://www.w3.org/2000/svg"
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 >
