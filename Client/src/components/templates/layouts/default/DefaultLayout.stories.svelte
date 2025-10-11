@@ -13,7 +13,6 @@
 	});
 </script>
 
-<!-- Default Layout-->
 <Story let:args name="Default">
 	<DefaultLayout {...args}>
 		<svelte:fragment slot="header">
@@ -32,14 +31,12 @@
 	</DefaultLayout>
 </Story>
 
-<!-- Minimal Layout -->
 <Story let:args name="WithoutHeaderFooter">
 	<DefaultLayout {...args}>
 		<p class="p-4">Only the main content is rendered here.</p>
 	</DefaultLayout>
 </Story>
 
-<!-- Complex Layout -->
 <Story let:args name="WithNavigationAndFooter">
 	<DefaultLayout {...args}>
 		<svelte:fragment slot="header">
@@ -67,3 +64,4 @@
 		</svelte:fragment>
 	</DefaultLayout>
 </Story>
+ 
