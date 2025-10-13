@@ -38,20 +38,16 @@
 	});
 </script>
 
-<!-- Default button -->
 <Story name="Default">Click Me</Story>
 
-<!-- Submit button -->
 <Story args={{ type: "submit" }} name="Submit Button">
 	Submit
 </Story>
 
-<!-- Reset button -->
 <Story args={{ type: "reset" }} name="Reset Button">
 	Reset
 </Story>
 
-<!-- Custom colors -->
 <Story
 		args={{
 			bgColor: "#ff4d4f",
@@ -62,10 +58,8 @@
 	Delete
 </Story>
 
-<!-- With additional classes -->
 <Story args={{ classes: "w-[200rem] text-[16rem]" }} name="Custom Width & Font">
 	Custom Size
 </Story>
-
-<!-- Long text button -->
+ 
 <Story name="Long Text Button">This is a very long button text</Story>

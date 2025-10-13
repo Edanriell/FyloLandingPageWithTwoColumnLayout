@@ -1,9 +1,19 @@
 <script lang="ts">
 	import {HeroIllustration, PrimaryHeading, Text} from "@atoms";
 	import {EmailSignup} from "@molecules";
+
+	interface Props {
+		classes?: string;
+		[key: string]: unknown;
+	}
+
+	let {
+		classes = "",
+		...restProps 
+	}: Props = $props();
 </script>
 
-<section class="hero flex flex-col-reverse items-center desktop:flex-row">
+<section {...restProps} class="hero flex flex-col-reverse items-center desktop:flex-row {classes}">
 	<div class="relative desktop:basis-[50%]">
 		<PrimaryHeading classes="mb-[24rem]! desktop:text-left desktop:text-wrap! desktop:mb-[15rem]!">All your files in one secure location, accessible anywhere.</PrimaryHeading>
 		<Text classes="mb-[32rem]! desktop:text-left desktop:mb-[25rem]!">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</Text>

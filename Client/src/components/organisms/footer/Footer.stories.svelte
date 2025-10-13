@@ -22,5 +22,4 @@
 	});
 </script>
 
-<!-- Footer -->
 <Story name="Footer" />
