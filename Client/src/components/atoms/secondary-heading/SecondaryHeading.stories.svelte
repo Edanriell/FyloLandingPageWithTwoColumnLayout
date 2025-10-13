@@ -1,11 +1,11 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
-	import PrimaryHeading from "./PrimaryHeading.svelte";
+	import SecondaryHeading from "./SecondaryHeading.svelte";
 
 	const { Story } = defineMeta({
-		title: "Atoms/PrimaryHeading",
-		component: PrimaryHeading,
+		title: "Atoms/SecondaryHeading",
+		component: SecondaryHeading,
 		tags: ["autodocs"],
 		parameters: {
 			layout: "centered",
@@ -22,4 +22,4 @@
 	});
 </script>
 
-<Story name="Primary Heading">Primary heading</Story>
+<Story name="Secondary Heading">Secondary heading</Story>

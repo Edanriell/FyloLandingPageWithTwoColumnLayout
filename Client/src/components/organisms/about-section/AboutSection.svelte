@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {AboutIllustration} from "@atoms";
+	import {AboutIllustration, Link, SecondaryHeading, Text} from "@atoms";
 
 	interface Props {
 		classes?: string;
@@ -12,14 +12,14 @@
 	}: Props = $props();
 </script> 
 
-<section {...restProps} class="{classes}">
-	<div>
-		<h2>Stay productive, wherever you are</h2>
-		<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-		<p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-		<a href="#">
+<section {...restProps} class="flex flex-col-reverse items-center {classes}">
+	<div class="relative">
+		<SecondaryHeading>Stay productive, wherever you are</SecondaryHeading>
+		<Text classes="text-[#615f7e]! desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal!">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</Text>
+		<Text classes="text-[#615f7e]! desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal!">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</Text>
+		<Link href="#">
 			<span>See how Fylo works</span>
-		</a>
+		</Link>
 		<figure>
 			<blockquote>
 				Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
@@ -33,7 +33,7 @@
 			</figcaption>
 		</figure>
 	</div>
-	<div>
+	<div class="relative">
 		<AboutIllustration />
 	</div>
 </section>
