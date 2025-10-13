@@ -1,11 +1,11 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
-	import AboutSection from "./AboutSection.svelte";
+	import AboutIllustration from "./AboutIllustration.svelte";
 
 	const { Story } = defineMeta({
-		title: "Organisms/AboutSection",
-		component: AboutSection,
+		title: "Atoms/AboutIllustration",
+		component: AboutIllustration,
 		tags: ["autodocs"],
 		parameters: {
 			layout: "centered",
@@ -15,11 +15,11 @@
 				control: "text",
 				description: "Additional CSS classes",
 			},
-		}, 
+		},
 		args: {
 			classes: ""
 		},
 	});
 </script>
 
-<Story name="About Section" />
+<Story name="About Illustration" />
