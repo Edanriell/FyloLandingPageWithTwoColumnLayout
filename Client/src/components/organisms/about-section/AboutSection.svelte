@@ -1,7 +1,18 @@
 <script lang="ts">
-</script>
+	import {AboutIllustration} from "@atoms";
 
-<section>
+	interface Props {
+		classes?: string;
+		[key: string]: unknown;
+	}
+
+	let {
+		classes = "",
+		...restProps
+	}: Props = $props();
+</script> 
+
+<section {...restProps} class="{classes}">
 	<div>
 		<h2>Stay productive, wherever you are</h2>
 		<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
@@ -22,5 +33,7 @@
 			</figcaption>
 		</figure>
 	</div>
-	<div></div>
+	<div>
+		<AboutIllustration />
+	</div>
 </section>
