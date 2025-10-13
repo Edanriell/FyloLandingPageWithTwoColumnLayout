@@ -31,31 +31,30 @@
 	});
 </script>
 
-<!-- Secondary navigation -->
 <Story name="Secondary navigation" >
 	<SecondaryNavigationGroup>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">About Us</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">About Us</Link>
 		</SecondaryNavigationItem>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Jobs</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Jobs</Link>
 		</SecondaryNavigationItem>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Press</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Press</Link>
 		</SecondaryNavigationItem>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Blog</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Blog</Link>
 		</SecondaryNavigationItem>
 	</SecondaryNavigationGroup>
 	<SecondaryNavigationGroup>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Contact Us</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Contact Us</Link>
 		</SecondaryNavigationItem>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Terms</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Terms</Link>
 		</SecondaryNavigationItem>
 		<SecondaryNavigationItem>
-			<Link textColor="#FFF" textHoverColor="#155EED" url="#">Privacy</Link>
+			<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Privacy</Link>
 		</SecondaryNavigationItem>
 	</SecondaryNavigationGroup>
 </Story>

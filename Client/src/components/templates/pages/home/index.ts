@@ -1,1 +1,1 @@
-export { default as HomePage } from "./home.svelte";
+export { default as HomePage } from "./Home.svelte";
