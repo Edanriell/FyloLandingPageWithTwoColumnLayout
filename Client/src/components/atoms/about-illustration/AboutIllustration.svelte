@@ -14,8 +14,7 @@
 		{...restProps}
 		class="w-[85.33vw] h-[64.26vw] max-w-[542rem] max-h-[409rem] desktop:w-[100%] desktop:h-[409rem] {classes}"
 		data-name="Layer 1"
-		height="813.02"
-		width="1077.87"
+		viewBox="0 0 1077.87 813.02"
 		xmlns="http://www.w3.org/2000/svg"
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 >

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import {HeroSection} from "@organisms";
+	import {AboutSection, HeroSection} from "@organisms";
 </script>
 
 <HeroSection />
+<AboutSection/>
