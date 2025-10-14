@@ -1,6 +1,19 @@
-<script>
-</script>
+<script lang="ts">
+	import type {Snippet} from "svelte";
 
-<blockquote>
-	Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+	interface Props {
+		classes?: string;
+		children?: Snippet;
+		[key: string]: unknown;
+	}
+
+	let {
+		children,
+		classes = "",
+		...restProps
+	}: Props = $props();
+</script>
+ 
+<blockquote {...restProps} class=" {classes}">
+	{@render children?.()}
 </blockquote>

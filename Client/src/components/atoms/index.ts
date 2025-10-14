@@ -9,3 +9,4 @@ export * from "./primary-heading";
 export * from "./text";
 export * from "./about-illustration";
 export * from "./secondary-heading";
+export * from "./quote";

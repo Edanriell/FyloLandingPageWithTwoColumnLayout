@@ -1,6 +1,8 @@
 <script lang="ts">
 	import {defineMeta} from "@storybook/addon-svelte-csf";
 
+	import {Quote} from "@atoms";
+
 	import QuoteBlock from "./QuoteBlock.svelte";
 
 	const { Story } = defineMeta({
@@ -23,6 +25,8 @@
 </script>
 
 <Story name="Quote Block">
-	<Quote />
+	<Quote>
+		Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+	</Quote>
 	<QuoteAuthor />
 </Story>

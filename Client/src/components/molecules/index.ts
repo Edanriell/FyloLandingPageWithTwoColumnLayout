@@ -3,3 +3,4 @@ export * from "./secondary-navigation";
 export * from "./social-links";
 export * from "./contacts";
 export * from "./email-signup";
+export * from "./quote-block";
