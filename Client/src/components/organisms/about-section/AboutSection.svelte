@@ -13,12 +13,12 @@
 	}: Props = $props();
 </script> 
 
-<section {...restProps} class="flex flex-col-reverse items-center {classes}">
-	<div class="relative">
-		<SecondaryHeading>Stay productive, wherever you are</SecondaryHeading>
-		<Text classes="text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal!">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</Text>
-		<Text classes="text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal!">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</Text>
-		<div class="flex items-center justify-center">
+<section {...restProps} class="bg-red-600 flex flex-col-reverse items-center about desktop:flex-row desktop:gap-x-[90rem] {classes}">
+	<div class="relative desktop:basis-[53%]">
+		<SecondaryHeading classes="mb-[24rem]! desktop:text-left desktop:mb-[38rem]!">Stay productive, wherever you are</SecondaryHeading>
+		<Text classes="mb-[16rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]!">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</Text>
+		<Text classes="mb-[36rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]! desktop:mb-[15rem]!">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</Text>
+		<div class="flex items-center justify-center mb-[40rem]! desktop:mb-[45rem]! desktop:justify-start">
 			<Link classes="relative leading-[250%] inline-flex flex-row items-center justify-center gap-x-[8rem] text-[#3da08f] hover:text-[#71dfcc] font-[OpenSans]!" href="#">
 				<span class="relative">See how Fylo works</span>
 				<svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -41,8 +41,8 @@
 				<span class="absolute bottom-0 left-0 w-full h-[1rem] bg-[currentColor]"></span>
 			</Link>
 		</div>
-		<QuoteBlock>
-			<Quote>
+		<QuoteBlock classes="ml-[28rem]! mr-[12rem]! desktop:ml-[unset]! desktop:mr-[unset]! desktop:max-w-[356rem]">
+			<Quote classes="mb-[11.94rem]! desktop:mb-[16rem]!">
 				Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
 			</Quote>
 			<QuoteAuthor
@@ -53,7 +53,18 @@
 			/>
 		</QuoteBlock>
 	</div>
-	<div class="relative">
+	<div class="mb-[87rem]! desktop:mb-[unset]!">
 		<AboutIllustration />
 	</div>
 </section>
+
+<style lang="less">
+	@import "../../../styles/fluid-space.less";
+
+	.about {
+		.fluid-space-clamp(padding-top, 93rem, 178rem);
+		.fluid-space-clamp(padding-bottom, 81rem, 107rem);
+		.fluid-space-clamp(padding-left, 20rem, 80rem);
+		.fluid-space-clamp(padding-right, 35rem, 80rem);
+	}
+</style>

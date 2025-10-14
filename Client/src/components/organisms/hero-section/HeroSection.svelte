@@ -26,7 +26,7 @@
 
 <style lang="less">
 	@import "../../../styles/fluid-space.less";
-
+ 
 	.hero {
 		.fluid-space-clamp(padding-top, 74rem, 21rem);
 		.fluid-space-clamp(padding-bottom, 90rem, 164rem);
