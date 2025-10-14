@@ -13,7 +13,7 @@
 	}: Props = $props();
 </script> 
 
-<section {...restProps} class="bg-red-600 flex flex-col-reverse items-center about desktop:flex-row desktop:gap-x-[90rem] {classes}">
+<section {...restProps} class="relative bg-[#f8f8fe] flex flex-col-reverse items-center about desktop:flex-row desktop:gap-x-[90rem] {classes}">
 	<div class="relative desktop:basis-[53%]">
 		<SecondaryHeading classes="mb-[24rem]! desktop:text-left desktop:mb-[38rem]!">Stay productive, wherever you are</SecondaryHeading>
 		<Text classes="mb-[16rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]!">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</Text>
@@ -56,6 +56,22 @@
 	<div class="mb-[87rem]! desktop:mb-[unset]!">
 		<AboutIllustration />
 	</div>
+	<svg class="w-full absolute top-[-1rem] left-0 block! desktop:hidden!" fill="none" height="37" preserveAspectRatio="none" viewBox="0 0 375 37" width="375" xmlns="http://www.w3.org/2000/svg">
+		<path
+				clip-rule="evenodd"
+				d="M375 37C375 37 250.468 1.00264 187.5 1.00264C124.532 1.00264 0 37 0 37V1.00264L187.5 0.5L375 1.00264V37Z"
+				fill="#fff"
+				fill-rule="evenodd"
+		/>
+	</svg>
+	<svg class="w-full absolute top-0 left-0 block hidden! desktop:block!" fill="none" height="79" preserveAspectRatio="none" viewBox="0 0 1440 79" width="1440" xmlns="http://www.w3.org/2000/svg">
+		<path
+				clip-rule="evenodd"
+				d="M0 78.5C0 78.5 478.202 5.22784 720 5.22784C961.798 5.22784 1440 78.3319 1440 78.3319V0H0V78.5Z"
+				fill="#fff"
+				fill-rule="evenodd"
+		/>
+	</svg>
 </section>
 
 <style lang="less">
