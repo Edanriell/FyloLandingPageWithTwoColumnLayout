@@ -13,7 +13,9 @@ when
 	(@type = padding),
 	(@type = gap),
 	(@type = column-gap),
-	(@type = row-gap)
+	(@type = row-gap),
+	(@type = width),
+	(@type = height)
 {
 	@{type}: @min-space;
 
@@ -40,7 +42,10 @@ when
 (@type = padding),
 (@type = gap),
 (@type = column-gap),
-(@type = row-gap) {
+(@type = row-gap),
+(@type = width),
+(@type = height)
+{
 	// Default clamp (Chrome, Safari)
 	@{type}: ~"clamp(@{min-space}, calc(@{min-space} + (@{max-space} - @{min-space}) * ((100vw - @{min-screen}) / (@{max-screen} - @{min-screen}))), @{max-space})";
 

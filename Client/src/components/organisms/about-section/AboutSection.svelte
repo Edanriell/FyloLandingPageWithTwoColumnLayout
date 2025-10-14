@@ -1,5 +1,6 @@
 <script lang="ts">
-	import {AboutIllustration, Link, SecondaryHeading, Text} from "@atoms";
+	import {AboutIllustration, Link, Quote, QuoteAuthor, SecondaryHeading, Text} from "@atoms";
+	import {QuoteBlock} from "@molecules";
 
 	interface Props {
 		classes?: string;
@@ -40,18 +41,17 @@
 				<span class="absolute bottom-0 left-0 w-full h-[1rem] bg-[currentColor]"></span>
 			</Link>
 		</div>
-		<figure>
-			<blockquote>
+		<QuoteBlock>
+			<Quote>
 				Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-			</blockquote>
-			<figcaption>
-				<img alt="Portrait of Kyle Burton, Founder & CEO of Huddle" src="">
-				<div>
-					<strong>Kyle Burton</strong>
-					<small>Founder & CEO, Huddle</small>
-				</div>
-			</figcaption>
-		</figure>
+			</Quote>
+			<QuoteAuthor
+				authorFullName="Kyle Burton"
+				authorImageAlt="Portrait of Kyle Burton, Founder & CEO of Huddle"
+				authorImageUrl="images/raster/avatar.jpg"
+				authorJobTitle="Founder & CEO, Huddle"
+			/>
+		</QuoteBlock>
 	</div>
 	<div class="relative">
 		<AboutIllustration />
