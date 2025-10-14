@@ -1,6 +1,7 @@
 @import "reset.less";
 @import "fonts.less";
-
+@import "./fluid-space.less";
+@import "./fluid-typography.less";
 html {
 	font-size: 6.25%;
 	scroll-behavior: smooth;
@@ -27,4 +28,20 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.access__heading {
+	.fluid-text-clamp(18rem, 32rem) !important;
+}
+
+.access__text {
+	.fluid-text-clamp(14rem, 16rem) !important;
+}
+
+.access__email-signup-form {
+	.fluid-text-clamp(10rem, 14rem) !important;
+}
+
+.access__email-signup-form__input {
+	.fluid-text-clamp(10rem, 12rem) !important;
 }

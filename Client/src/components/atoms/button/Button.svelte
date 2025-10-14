@@ -16,6 +16,6 @@
 	}: Props = $props();
 </script>
 
-<button {...restProps} class="font-[Raleway]! font-bold! text-white rounded-[3rem] shadow-[2rem_3rem_6rem_0_rgba(0,0,0,0.16)] text-[14rem]! w-full! h-[100%]! cursor-pointer {classes}" type="{type}">
+<button {...restProps} class="font-[Raleway]! font-bold! rounded-[3rem] shadow-[2rem_3rem_6rem_0_rgba(0,0,0,0.16)] text-[inherit]! w-full! h-[100%]! cursor-pointer {classes}" type="{type}">
 	{@render children?.()}
 </button>

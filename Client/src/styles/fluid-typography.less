@@ -10,7 +10,7 @@
 		font-size: @max-size;
 	}
 }
-
+ 
 // Clamp-based fluid typography (modern approach)
 .fluid-text-clamp(@min-size, @max-size, @min-screen: 375px, @max-screen: 1440px) {
 	font-size: ~"clamp(@{min-size}, @{min-size} + (@{max-size} - @{min-size}) * ((100vw - @{min-screen}) / (@{max-screen} - @{min-screen})), @{max-size})";
