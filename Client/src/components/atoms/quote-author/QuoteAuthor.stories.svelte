@@ -34,4 +34,4 @@
 	});
 </script>
 
-<Story args={{authorImageUrl:"", authorFullName:"Kyle Burton", authorJobTitle:"Founder & CEO, Huddle"}} name="Quote Author" />
+<Story args={{authorImageUrl:"", authorImageAlt:"Portrait of Kyle Burton, Founder & CEO of Huddle", authorFullName:"Kyle Burton", authorJobTitle:"Founder & CEO, Huddle"}} name="Quote Author" />
