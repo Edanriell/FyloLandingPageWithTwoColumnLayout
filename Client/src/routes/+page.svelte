@@ -1,5 +1,5 @@
 <script>
-	import {HomePage} from "@templates/pages"
+	import {HomePage} from "@templates"
 </script>
 
 <HomePage />
