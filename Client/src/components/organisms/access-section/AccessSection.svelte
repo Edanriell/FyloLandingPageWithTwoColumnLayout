@@ -1,13 +1,17 @@
 <script lang="ts">
+	import type {PageData} from "../../../../.svelte-kit/types/src/routes/$types";
+
 	import {SecondaryHeading, Text} from "@atoms";
 	import {EmailSignup} from "@molecules";
 
 	interface Props {
+		data: PageData;
 		classes?: string;
 		[key: string]: unknown;
 	}
 
 	let {
+		data,
 		classes = "",
 		...restProps
 	}: Props = $props();
@@ -21,8 +25,11 @@
 	<EmailSignup
 		buttonPlaceholder="Get Started For Free"
 		classes="leading-[initial]! text-white ml-[18rem]! mr-[18rem]! grid grid-rows-[32rem_32rem] grid-cols-1 gap-y-[8rem] desktop:ml-[unset]! desktop:mr-[unset]! desktop:grid-rows-[48rem_48rem] desktop:gap-y-[16rem] desktop:grid-cols-[200rem_1fr] access__email-signup-form desktop:mt-[12rem]!"
+		data={data}
+		errorMessageClasses="bottom-[25rem]! desktop:bottom-[45rem]! text-[#fff]"
 		inputClasses="placeholder:text-[10rem]! pl-[8rem]! pr-[8rem]! pt-[10rem]! pb-[10rem]! desktop:col-span-2 desktop:placeholder:text-[12rem]! desktop:pt-[16rem]! desktop:pb-[18rem]! desktop:pl-[22rem]! desktop:pr-[22rem]! access__email-signup-form__input"
 		inputPlaceholder="email@example.com"
+		successMessageClasses="bottom-[25rem]! desktop:bottom-[45rem]!"
 	/>
 </section>
 
