@@ -1,4 +1,6 @@
 <script lang="ts">
+	import {m} from "$lib/paraglide/messages.js";
+
 	import type {PageData} from "../../../../.svelte-kit/types/src/routes/$types";
 
 	import {HeroIllustration, PrimaryHeading, Text} from "@atoms";
@@ -19,9 +21,9 @@
 
 <section {...restProps} class="hero flex flex-col-reverse items-center desktop:flex-row {classes}">
 	<div class="relative desktop:basis-[50%]">
-		<PrimaryHeading classes="mb-[24rem]! desktop:text-left desktop:text-wrap! desktop:mb-[15rem]!">All your files in one secure location, accessible anywhere.</PrimaryHeading>
-		<Text classes="mb-[32rem]! desktop:text-left desktop:mb-[25rem]!">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</Text>
-		<EmailSignup classes="text-white grid grid-rows-[40rem_40rem] grid-cols-1 gap-y-[16rem] text-[14rem]! desktop:grid-rows-[45rem] desktop:grid-cols-[0.77fr_200rem] desktop:gap-x-[16rem]" data={data} inputClasses="border-[0.62rem] border-[#07043b] shadow-[2rem_3rem_6rem_0_rgba(0,0,0,0.16)]" />
+		<PrimaryHeading classes="mb-[24rem]! desktop:text-left desktop:text-wrap! desktop:mb-[15rem]!">{m.hero_section_title()}</PrimaryHeading>
+		<Text classes="mb-[32rem]! desktop:text-left desktop:mb-[25rem]!">{m.hero_section_text()}</Text>
+		<EmailSignup buttonPlaceholder={m.hero_section_button()} classes="text-white grid grid-rows-[40rem_40rem] grid-cols-1 gap-y-[16rem] text-[14rem]! desktop:grid-rows-[45rem] desktop:grid-cols-[0.77fr_200rem] desktop:gap-x-[16rem]" data={data} inputClasses="border-[0.62rem] border-[#07043b] shadow-[2rem_3rem_6rem_0_rgba(0,0,0,0.16)]" inputPlaceholder={m.hero_section_input()} />
 	</div>
 	<div class="desktop:basis-[50%]">
 		<HeroIllustration classes="mb-[40rem]!" />

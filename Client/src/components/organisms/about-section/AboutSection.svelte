@@ -1,4 +1,6 @@
 <script lang="ts">
+	import {m} from "$lib/paraglide/messages.js";
+
 	import {AboutIllustration, Link, Quote, QuoteAuthor, SecondaryHeading, Text} from "@atoms";
 	import {QuoteBlock} from "@molecules";
 
@@ -15,12 +17,12 @@
 
 <section {...restProps} class="relative bg-[#f8f8fe] flex flex-col-reverse items-center about desktop:flex-row desktop:gap-x-[90rem] {classes}">
 	<div class="relative desktop:basis-[53%]">
-		<SecondaryHeading classes="mb-[24rem]! desktop:text-left desktop:mb-[38rem]!">Stay productive, wherever you are</SecondaryHeading>
-		<Text classes="mb-[16rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]!">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</Text>
-		<Text classes="mb-[36rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]! desktop:mb-[15rem]!">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</Text>
+		<SecondaryHeading classes="mb-[24rem]! desktop:text-left desktop:mb-[38rem]!">{m.about_section_title()}</SecondaryHeading>
+		<Text classes="mb-[16rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]!">{m.about_section_text1()}</Text>
+		<Text classes="mb-[36rem]! text-[#615f7e]! pr-[unset] desktop:text-left desktop:text-[16rem]! desktop:text-[#07043b]! desktop:leading-[150%]! desktop:tracking-normal! desktop:text-left desktop:mr-[119rem]! desktop:mb-[15rem]!">{m.about_section_text2()}</Text>
 		<div class="flex items-center justify-center mb-[40rem]! desktop:mb-[45rem]! desktop:justify-start">
 			<Link classes="relative leading-[250%] inline-flex flex-row items-center justify-center gap-x-[8rem] text-[#3da08f] hover:text-[#71dfcc] font-[OpenSans]!" href="#">
-				<span class="relative">See how Fylo works</span>
+				<span class="relative">{m.about_section_link()}</span>
 				<svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 					<g filter="url(#filter0_d_0_80)">
 						<circle cx="8" cy="8" fill="currentColor" r="6" />
@@ -43,13 +45,13 @@
 		</div>
 		<QuoteBlock classes="ml-[28rem]! mr-[12rem]! desktop:ml-[unset]! desktop:mr-[unset]! desktop:max-w-[356rem]">
 			<Quote classes="mb-[11.94rem]! desktop:mb-[16rem]!">
-				Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+				{m.about_section_quote_text()}
 			</Quote>
-			<QuoteAuthor
-				authorFullName="Kyle Burton"
+			<QuoteAuthor 
+				authorFullName={m.about_section_quote_author()}
 				authorImageAlt="Portrait of Kyle Burton, Founder & CEO of Huddle"
 				authorImageUrl="images/raster/avatar.jpg"
-				authorJobTitle="Founder & CEO, Huddle"
+				authorJobTitle={m.about_section_quote_author_job_position()}
 			/>
 		</QuoteBlock>
 	</div>

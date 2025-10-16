@@ -1,6 +1,10 @@
 <script lang="ts">
+	import {m} from "$lib/paraglide/messages.js";
+
 	import {Link, Logotype} from "@atoms"
 	import {PrimaryNavigation, PrimaryNavigationItem} from "@molecules";
+
+	import LanguageSwitcher from "@molecules/language-switcher/LanguageSwitcher.svelte";
 
 	interface Props {
 		classes?: string;
@@ -13,19 +17,22 @@
 	}: Props = $props();
 </script>
 
-<header {...restProps} class="header flex flex-row items-center justify-between {classes}">
-	<Logotype colorScheme="Dark" />
-	<PrimaryNavigation>
-		<PrimaryNavigationItem>
-			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Features</Link>
-		</PrimaryNavigationItem>
-		<PrimaryNavigationItem>
-			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Team</Link>
-		</PrimaryNavigationItem>
-		<PrimaryNavigationItem>
-			<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">Sign In</Link>
-		</PrimaryNavigationItem>
-	</PrimaryNavigation>
+<header {...restProps} class="header grid grid-cols-[1fr_auto] gap-x-[60rem] desktop:gap-x-[120rem]">
+	<div class="flex flex-row items-center justify-between {classes}">
+		<Logotype colorScheme="Dark" />
+		<PrimaryNavigation>
+			<PrimaryNavigationItem>
+				<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">{m.header_navigation_item1()}</Link>
+			</PrimaryNavigationItem>
+			<PrimaryNavigationItem>
+				<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">{m.header_navigation_item2()}</Link>
+			</PrimaryNavigationItem>
+			<PrimaryNavigationItem>
+				<Link classes="text-[#444E86] hover:text-[#444E86]" url="#">{m.header_navigation_item3()}</Link>
+			</PrimaryNavigationItem>
+		</PrimaryNavigation>
+	</div>
+	<LanguageSwitcher />
 </header>
 
 <style lang="less">
