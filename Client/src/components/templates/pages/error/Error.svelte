@@ -25,10 +25,10 @@
 			<h1 class="mb-[unset]! mt-[unset]! text-[128rem]! sm:text-[144rem]! desktop:text-[192rem]! font-bold! text-gray-200! select-none!">404</h1>
 		</div>
 		<div class="mb-[48rem] flex! flex-col! items-center! justify-center!">
-			<h2 class="text-[48rem]! sm:text-[64rem]! desktop:text-[60rem]! font-bold! text-gray-900! mb-[24rem]!">Page Not Found</h2>
+			<h2 class="text-[48rem]! sm:text-[64rem]! desktop:text-[60rem]! font-bold! text-gray-900! mb-[24rem]!">{m.page_not_found()}</h2>
 			<p class="pl-[24rem]! pr-[24rem]! text-[16rem]! desktop:text-[18rem]! text-gray-600! mb-[32rem]! leading-[150%]! max-w-[712rem]">
-				{m.page_not_found1()}
-				{m.page_not_found2()}
+				{m.page_not_found_text_1()}
+				{m.page_not_found_text_2()}
 			</p>
 		</div>
 		<div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[40rem_40rem] gap-x-[32rem] gap-y-[16rem] desktop:grid-rows-[45rem] desktop:grid-cols-[1fr_1fr]">

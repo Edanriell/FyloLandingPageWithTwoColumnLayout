@@ -15,7 +15,7 @@
 		...restProps
 	}: Props = $props();
 
-	let selectedLanguage = "en";
+	let selectedLanguage =  $state<"en" | "lv">("en");
 
 	const languages = [
 		{value: "en", label: "English"},
@@ -24,7 +24,7 @@
 
 	function handleLanguageChange(event: Event) {
 		const select = event.target as HTMLSelectElement;
-		selectedLanguage = select.value;
+		selectedLanguage = select.value as unknown as typeof selectedLanguage;
 
 		if (selectedLanguage === languages[0].value) {
 			setLocale("en")
@@ -36,7 +36,7 @@
 
 <div class="language-switcher__wrapper">
 	<label class="hidden font-[OpenSans] text-[#07043b] desktop:block" for="language">{m.choose_language()}</label>
-	<select {...restProps} bind:value={selectedLanguage} class="language-switcher {classes}" id="language" name="language" on:change={handleLanguageChange}>
+	<select {...restProps} class="language-switcher {classes}" id="language" name="language" onchange={handleLanguageChange}>
 		{#each languages as language (language.value)}
 			<option value={language.value}>{language.label}</option>
 		{/each}

@@ -18,6 +18,7 @@
 	}: Props = $props();
 </script>
 
+<!-- svelte-ignore a11y_figcaption_parent -->
 <figcaption {...restProps} class="flex flex-row items-center author {classes}">
 	<img alt="{authorImageAlt}" class="rounded-full object-contain author__image" src="{authorImageUrl}">
 	<div class="flex flex-col items-start gap-y-[1.8rem] desktop:gap-y-[unset]">
