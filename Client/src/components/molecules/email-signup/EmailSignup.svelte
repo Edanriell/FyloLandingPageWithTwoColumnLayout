@@ -3,12 +3,14 @@
 	import {superForm} from "sveltekit-superforms";
 	import {yupClient} from "sveltekit-superforms/adapters";
 
+	import type {PageData} from "../../../../.svelte-kit/types/src/routes/$types";
+
 	import {Button, Input} from "@atoms";
 
 	import {emailSignupSchema} from "@molecules/email-signup/model";
 
 	interface Props {
-		data: any;
+		data: PageData;
 		buttonPlaceholder?: string;
 		inputPlaceholder?: string;
 		classes?: string;

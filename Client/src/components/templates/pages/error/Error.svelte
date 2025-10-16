@@ -1,6 +1,8 @@
 <script lang="ts">
 	import {goto} from "$app/navigation";
 
+	import {m} from "$lib/paraglide/messages.js";
+
 	import {Button} from "@atoms";
 
 	function goHome() {
@@ -25,13 +27,13 @@
 		<div class="mb-[48rem] flex! flex-col! items-center! justify-center!">
 			<h2 class="text-[48rem]! sm:text-[64rem]! desktop:text-[60rem]! font-bold! text-gray-900! mb-[24rem]!">Page Not Found</h2>
 			<p class="pl-[24rem]! pr-[24rem]! text-[16rem]! desktop:text-[18rem]! text-gray-600! mb-[32rem]! leading-[150%]! max-w-[712rem]">
-				Sorry, we couldn't find the page you're looking for.
-				It might have been moved, deleted, or you entered the wrong URL.
+				{m.page_not_found1()}
+				{m.page_not_found2()}
 			</p>
 		</div>
 		<div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[40rem_40rem] gap-x-[32rem] gap-y-[16rem] desktop:grid-rows-[45rem] desktop:grid-cols-[1fr_1fr]">
-			<Button classes="row-start-1 col-start-2 text-white! bg-[#2f65f8] hover:bg-[#6c9bff] desktop:row-start-1 desktop:col-start-1" onclick={goHome} type="button">Go Home</Button>
-			<Button classes="row-start-2 col-start-2 text-white! bg-[#2f65f8] hover:bg-[#6c9bff] desktop:row-start-1 desktop:col-start-2" onclick={goBack} type="button">Go Back</Button>
+			<Button classes="row-start-1 col-start-2 text-white! bg-[#2f65f8] hover:bg-[#6c9bff] desktop:row-start-1 desktop:col-start-1" onclick={goHome} type="button">{m.go_home()}</Button>
+			<Button classes="row-start-2 col-start-2 text-white! bg-[#2f65f8] hover:bg-[#6c9bff] desktop:row-start-1 desktop:col-start-2" onclick={goBack} type="button">{m.go_back()}</Button>
 		</div>
 	</div>
 </section>

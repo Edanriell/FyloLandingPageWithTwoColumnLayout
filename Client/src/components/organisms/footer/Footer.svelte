@@ -1,4 +1,6 @@
 <script lang="ts">
+	import {m} from "$lib/paraglide/messages.js";
+
 	import {Contact, Link, Logotype, SocialLink} from "@atoms";
 	import {
 		Contacts,
@@ -24,34 +26,34 @@
 	<div class="footer__content flex flex-col items-start desktop:mr-[37rem]!">
 		<Logotype colorScheme="Light" />
 		<Contacts>
-			<Contact description="Phone: +1-543-123-4567" type="phone-number" url="tel:15431234567" />
+			<Contact description="{m.footer_contacts()}: +1-543-123-4567" type="phone-number" url="tel:15431234567" />
 			<Contact description="example@fylo.com" type="email-address" url="mailto:example@fylo.com" />
 		</Contacts>
 	</div>
 	<SecondaryNavigation classes="desktop:justify-between desktop:basis-[32.3%] desktop:mt-[77rem]!">
 		<SecondaryNavigationGroup>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">About Us</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item1()}</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Jobs</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item2()}</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Press</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item3()}</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Blog</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item4()}</Link>
 			</SecondaryNavigationItem>
 		</SecondaryNavigationGroup>
 		<SecondaryNavigationGroup>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Contact Us</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item5()}</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Terms</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item6()}</Link>
 			</SecondaryNavigationItem>
 			<SecondaryNavigationItem>
-				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">Privacy</Link>
+				<Link classes="font-[OpenSans]! text-[#fff] hover:text-[#6c9bff] text-[16rem]!" url="#">{m.footer_secondary_navigation_item7()}</Link>
 			</SecondaryNavigationItem>
 		</SecondaryNavigationGroup>
 	</SecondaryNavigation>
